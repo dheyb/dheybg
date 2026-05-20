@@ -1,0 +1,212 @@
+/* body  */
+
+body{
+
+    background: url(background.gif) no-repeat;
+    min-height: 98.2vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* login and register  */
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .2s ease;
+}
+
+.wrapper.active{
+    
+    height: 520px;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+/* login  */
+
+.wrapper .form-box.login{
+    
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login{
+    
+    transition: none;
+    transform: translateX(-400px);
+
+}
+
+/* register  */
+
+.wrapper .form-box.register{
+    
+    position: absolute;
+    width: 300px;
+    transition: none;
+    transform: translateX(400px);
+
+}
+
+.wrapper.active .form-box.register{
+    
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+/* header  */
+
+.form-box h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+/* input box  */
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+/* email and password text  */
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: grey;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/* email and password text moving */
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    color: black;
+    top: -5px;
+    
+
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+/* icons of email password and username */
+
+.icon{
+    width: 15px;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+   
+}
+
+/* checkbox of remember me and I agree to the terms and condition and forgot password (link)  */
+
+.remember-forgot{
+    font-size: .9em;
+    color: black;
+    font-weight: 500;
+    margin:  -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* checkbox  */
+
+.remember-forgot label input{
+    margin-right: 5px;
+}
+
+/* link  */
+
+.remember-forgot a{
+    color: black;
+    text-decoration: none;
+}
+
+/* hover of link  */
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+/* button of login and register  */
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    transition: .5s;
+}
+
+/* hover of button  */
+
+.btn:hover{
+    background: green;
+}
+
+/*Don't have an account? "Register"(link) Already have an account? "Login"(link)*/
+
+.login-register{
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+
+
+.login-register p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+

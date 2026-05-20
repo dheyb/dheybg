@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <!-- login and register  -->
+<div class="wrapper">
+    <!-- login  -->
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <img src="mail.png" class="icon">
+                <input type="email" id="userMail" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <img src="padlock.png" class="icon">
+                <input type="password" id="userPw"  required >
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="button" onclick="check()" class="btn">Login</button>
+            <div class="login-register">
+                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <!-- register  -->
+    <div class="form-box register">
+        <h2>Register</h2>
+        <form action="#">
+            <div class="input-box">
+                <img src="username.png" class="icon">
+                <input type="text"  id="user"  required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <img src="mail.png" class="icon">
+                <input type="email" id="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <img src="padlock.png" class="icon">
+                <input type="password" id="pw"  required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">I agree to the terms and condition</label>
+            </div>
+            <button type="button" onclick="store()" class="btn" >Register</button>
+            <div class="login-register">
+                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="sign-in.js">
+</script>
+</html>

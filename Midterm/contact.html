@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact | Dheyb</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">E-Portfolio</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="project.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form id="contact-form">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" id="full-name" placeholder="Full Name">
+                    <span class="error-msg">Name is required</span>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="Email Address">
+                    <span class="error-msg">Valid email is required</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="number" id="phone" placeholder="Phone Number">
+                </div>
+                <div class="input-box">
+                    <input type="text" id="subject" placeholder="Email Subject">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <span class="error-msg">Message cannot be empty</span>
+            </div>
+
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
