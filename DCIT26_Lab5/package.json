@@ -1,6 +1,7 @@
 {
   "name": "front-end",
   "private": true,
+  "homepage": "https://dheyb.github.io/dheybg/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
